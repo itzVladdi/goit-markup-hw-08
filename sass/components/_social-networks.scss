@@ -1,0 +1,33 @@
+.social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-networks__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--icon-color);
+    background-color: transparent;
+    border-radius: 50%;
+    transition: color var(--anim-speed), background-color var(--anim-speed);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--white-color);
+    }
+}
+
+.social-networks__icon {
+    fill: currentColor;
+}
+
+// Футер
+.social-networks__link--footer {
+    color: var(--white-color);
+    background-color: var(--icon-bg-color);
+}

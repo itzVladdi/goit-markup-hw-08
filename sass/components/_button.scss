@@ -1,0 +1,89 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+    border: none;
+    transition: color var(--anim-speed), background-color var(--anim-speed),
+        box-shadow var(--anim-speed);
+    &:hover,
+    &:focus {
+        background-color: var(--btn-hover-color);
+        color: var(--white-color);
+    }
+}
+
+.button--hero {
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px 32px;
+}
+
+.button--subscribe {
+    gap: 10px;
+
+    min-width: 200px;
+    padding: 10px 28px;
+}
+
+.button--submit {
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px 52px;
+}
+
+.button--filter {
+    padding: 6px 22px;
+    background-color: var(--light-bg-color);
+
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    box-shadow: none;
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.button--close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    background-color: var(--white-color);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    color: var(--black-color);
+    &:hover,
+    &:focus {
+        background-color: var(--white-color);
+        color: var(--accent-color);
+    }
+}
+.button--close .icon {
+    fill: currentColor;
+    transition: fill var(--anim-speed);
+}

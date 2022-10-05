@@ -1,0 +1,13 @@
+.filters-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filters-menu .item {
+    display: block;
+}
+
+.filters-menu .item:not(:last-child) {
+    margin-right: 8px;
+}
