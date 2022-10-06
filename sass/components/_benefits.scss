@@ -1,10 +1,17 @@
 .benefits-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .benefits-list__card {
-    width: calc((100% - 30px * 3) / 4);
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 30px * 3) / 4);
+    }
 }
 .benefits-list__icon {
     display: flex;
@@ -20,8 +27,12 @@
     margin-bottom: 10px;
 
     font-size: 14px;
-    line-height: 1.14;
+    line-height: calc(16 / 14);
     text-transform: uppercase;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .benefits-list__text {
